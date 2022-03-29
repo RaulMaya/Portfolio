@@ -1,14 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
-
-h1{
-    font-family: 'Open Sans', sans-serif;
-    color: aliceblue;
-}
-
-  html {
-    background-color: navy;
-  }
-
-.container{
-    background-color: navy;
+body{
+    background-color:#f3f3f3 ;
+    justify-content: center;
+    align-items: center;
 }
