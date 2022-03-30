@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="{% static "portfolios/includes/header.css" %}">
+<link rel="stylesheet" href="{% static "portfolios/projects.css" %}">
+{% endblock %}
+
+{% block page_title %}
+Raul Maya
+{% endblock %}
+
+{% block content %}
+{% include "portfolios/includes/header.html" %}
+<div class="l-container">
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(https://time.com/wp-content/uploads/2015/11/exoplanets_by_jaysimons-d9dv6th-large.jpg);"></div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(https://w0.peakpx.com/wallpaper/401/273/HD-wallpaper-monterrey-nl-mty.jpg);"></div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(https://www.collinsdictionary.com/images/full/earthquake_139550174.jpg);"></div>
+    </div>
+    <div class="b-game-card">
+      <div class="b-game-card__cover" style="background-image: url(https://c4.wallpaperflare.com/wallpaper/949/635/743/spaceship-4k-solo-a-star-wars-story-millennium-falcon-wallpaper-preview.jpg);"></div>
+    </div>
+    <div class="b-game-card">
+        <div class="b-game-card__cover" style="background-image: url(https://www.teahub.io/photos/full/210-2102566_wallpaper-mars-planet-space-brown-surface-outer-space.jpg);"></div>
+      </div>
+      <div class="b-game-card">
+        <div class="b-game-card__cover" style="background-image: url(https://images.unsplash.com/photo-1608422050646-1b5001b208cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29yb25hdmlydXMlMjB2YWNjaW5lfGVufDB8fDB8fA%3D%3D&w=1000&q=80);"></div>
+      </div>
+      <div class="b-game-card">
+        <div class="b-game-card__cover" style="background-image: url(https://w0.peakpx.com/wallpaper/651/771/HD-wallpaper-arrival-tm-galaxy-landscape-sci-fi-scifi-space-tmdesigns-ufo-thumbnail.jpg);"></div>
+      </div>
+      <div class="b-game-card">
+        <div class="b-game-card__cover" style="background-image: url(https://compote.slate.com/images/ab25f2a3-4816-4c5f-a605-ee01820520a2.jpeg?width=780&height=520&rect=1560x1040&offset=0x0);"></div>
+      </div>
+  </div>
+{% endblock %}
