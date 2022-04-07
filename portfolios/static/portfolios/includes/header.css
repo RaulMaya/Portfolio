@@ -1,8 +1,8 @@
-.navbar {
+.my-navbar {
   width: 100%;
   font-family: "Open Sans", sans-serif;
 }
-.navbar ul {
+.my-navbar ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -12,10 +12,10 @@
   background-color: #fff;
   font-size: 0px;
 }
-.navbar ul:hover li {
+.my-navbar ul:hover li {
   width: 13.33333%;
 }
-.navbar ul li {
+.my-navbar ul li {
   display: inline-block;
   width: 16.66667%;
   -moz-transition: all 0.1s;
@@ -29,17 +29,17 @@
   text-shadow: 0px 1px 3px white;
   border: thin solid lightgray;
 }
-.navbar ul li:last-child {
+.my-navbar ul li:last-child {
   border-right: none;
 }
-.navbar ul li:hover {
+.my-navbar ul li:hover {
   background: #e6e6e6;
   width: 33.33333%;
   -moz-box-shadow: inset 10px 10px 10px -10px rgba(0, 0, 0, 0.3), inset -10px 10px 10px -10px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 10px 10px 10px -10px rgba(0, 0, 0, 0.3), inset -10px 10px 10px -10px rgba(0, 0, 0, 0.3);
   box-shadow: inset 10px 10px 10px -10px rgba(0, 0, 0, 0.3), inset -10px 10px 10px -10px rgba(0, 0, 0, 0.3);
 }
-.navbar ul li a {
+.my-navbar ul li a {
   display: block;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -50,16 +50,16 @@
   font-size: 20px;
   color: gray;
 }
-.navbar ul li a:visited {
+.my-navbar ul li a:visited {
   color: gray;
 }
-.navbar ul li div {
+.my-navbar ul li div {
   margin-top: 2px;
   font-weight: 600;
   font-size: 13px;
 }
 
-.navbar ul li a:hover {
+.my-navbar ul li a:hover {
   display: block;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
