@@ -7,4 +7,5 @@ urlpatterns = [
     path("projects", views.projects, name="projects"),
     path("resume", views.resume, name="resume"),
     path("interests", views.interests, name="interests"),
+    path("<str:project>", views.project, name="project-page"),
 ]

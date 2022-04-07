@@ -1,26 +1,23 @@
 {% extends 'base.html' %}
 {% load static %}
 
+
 {% block css_files %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link rel="stylesheet" href="{% static "portfolios/includes/header.css" %}">
-<link rel="stylesheet" href="{% static "portfolios/projects.css" %}">
 {% endblock %}
 
 {% block page_title %}
 Raul Maya
 {% endblock %}
 
+
 {% block content %}
 {% include "portfolios/includes/header.html" %}
-<div class="l-container">
-  {% for project, image in projects %}
-    <div class="b-game-card">
-      <a href="{% url 'project-page' project %}">
-        <div class="b-game-card__cover" style="background-image: url({{ image }});">
-        </div>
-      </a>
-    </div>
-  {% endfor %}
-</div>
+<h1>{{ project|title }} Project</h1>
+{% if description is not None %}
+    <h2>{{ description }}</h2>
+{% else %}
+    <p class="fallback">There is no project available with this name</p>
+{% endif %}
 {% endblock %}
