@@ -73,17 +73,5 @@ def interests(request):
 
     return render(request, "portfolios/interests.html")
 
-def project(request, project):
-    try:
-        project_description = projects_done[project]['description']
-        project_image = projects_done[project]['image']
-        #response_data = render_to_string("challenges/challenge.html")
-        return render(request, "portfolios/project.html", {
-            "description":  project_description,
-            "project": project,
-            "image":project_image
-        })
-    except:
-        raise Http404()
 
 
