@@ -1,6 +1,5 @@
 .my-navbar {
   width: 100%;
-  font-family: "Open Sans", sans-serif;
 }
 .my-navbar ul {
   -moz-box-sizing: border-box;
@@ -27,18 +26,19 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-shadow: 0px 1px 3px white;
-  border: thin solid lightgray;
+  border: thin solid black;
 }
 .my-navbar ul li:last-child {
   border-right: none;
 }
 .my-navbar ul li:hover {
-  background: #e6e6e6;
+  background: white;
   width: 33.33333%;
   -moz-box-shadow: inset 10px 10px 10px -10px rgba(0, 0, 0, 0.3), inset -10px 10px 10px -10px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 10px 10px 10px -10px rgba(0, 0, 0, 0.3), inset -10px 10px 10px -10px rgba(0, 0, 0, 0.3);
   box-shadow: inset 10px 10px 10px -10px rgba(0, 0, 0, 0.3), inset -10px 10px 10px -10px rgba(0, 0, 0, 0.3);
 }
+
 .my-navbar ul li a {
   display: block;
   -moz-box-sizing: border-box;
@@ -48,10 +48,10 @@
   height: 70px;
   text-decoration: none;
   font-size: 20px;
-  color: gray;
+  color: black;
 }
 .my-navbar ul li a:visited {
-  color: gray;
+  color: black;
 }
 .my-navbar ul li div {
   margin-top: 2px;
@@ -59,7 +59,7 @@
   font-size: 13px;
 }
 
-.my-navbar ul li a:hover {
+.my-navbar ul li.list-project a:hover {
   display: block;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -68,5 +68,66 @@
   height: 70px;
   text-decoration: none;
   font-size: 20px;
-  color: #1B1A17;
+  color: #FF0000;
+}
+
+.my-navbar ul li.list-home a:hover {
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 15px;
+  height: 70px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #00416D;
+}
+
+.my-navbar ul li.list-resume a:hover {
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 15px;
+  height: 70px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #541690;
+}
+
+
+.my-navbar ul li.list-interests a:hover {
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 15px;
+  height: 70px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #FFB830;
+}
+
+.my-navbar ul li.list-hobby a:hover {
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 15px;
+  height: 70px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #17B978;
+}
+
+.my-navbar ul li.list-summary a:hover {
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 15px;
+  height: 70px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #E2703A;
 }

@@ -14,12 +14,18 @@ Raul Maya
 {% block content %}
 {% include "portfolios/includes/header.html" %}
 <div class="l-container">
-  {% for project, image in projects %}
+  {% for project, image, desc in projects %}
     <div class="b-game-card">
-      <a href="{% url 'project-page' project %}">
+      <a href="">
         <div class="b-game-card__cover" style="background-image: url({{ image }});">
         </div>
+        
       </a>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{ project|title }} Project</h5>
+      <p class="card-text">{{ desc }}</p>
+      <a href="#" class="btn btn-primary">Go To Project</a>
     </div>
   {% endfor %}
 </div>
