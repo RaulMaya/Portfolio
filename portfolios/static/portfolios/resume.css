@@ -181,6 +181,14 @@ text-decoration: inherit; /* no underline */
   background-color: #ffcc33;
 }
 
+.bar.middle::before{
+  background-color: #36AE7C;
+}
+
+.bar.inside::before{
+  background-color: #FF8D29;
+}
+
 .bar.learning::before{
   width: calc(20% - 10px);
 }
