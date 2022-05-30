@@ -4,6 +4,7 @@
 {% block css_files %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link rel="stylesheet" href="{% static "portfolios/includes/header.css" %}">
+<link rel="stylesheet" href="{% static "portfolios/includes/footer.css" %}">
 <link rel="stylesheet" href="{% static "portfolios/projects.css" %}">
 {% endblock %}
 
@@ -14,9 +15,9 @@ RM: Projects
 {% block content %}
 {% include "portfolios/includes/header.html" %}
 <div class="l-container">
-  {% for project, image, desc in projects %}
+  {% for project, image, desc, urls in projects %}
     <div class="b-game-card">
-      <a href="">
+      <a href="{{ urls }}">
         <div class="b-game-card__cover" style="background-image: url({{ image }});">
         </div>
         
@@ -25,8 +26,11 @@ RM: Projects
     <div class="card-body">
       <h5 class="card-title">{{ project|title }} Project</h5>
       <p class="card-text">{{ desc }}</p>
-      <a href="#" class="btn btn-primary">Go To Project</a>
+      <a href="{{ urls }}" class="btn btn-primary">Go To Project</a>
     </div>
   {% endfor %}
+
 </div>
+<br>
+{% include "portfolios/includes/footer.html" %}
 {% endblock %}
