@@ -4,7 +4,6 @@
 {% block css_files %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link rel="stylesheet" href="{% static "portfolios/includes/header.css" %}">
-<link rel="stylesheet" href="{% static "portfolios/includes/footer.css" %}">
 <link rel="stylesheet" href="{% static "portfolios/projects.css" %}">
 {% endblock %}
 
@@ -16,21 +15,17 @@ RM: Projects
 {% include "portfolios/includes/header.html" %}
 <div class="l-container">
   {% for project, image, desc, urls in projects %}
-    <div class="b-game-card">
-      <a href="{{ urls }}">
-        <div class="b-game-card__cover" style="background-image: url({{ image }});">
-        </div>
-        
-      </a>
+  <div class="grid__item">
+    <div class="card"><img class="card__img" src="{{ image }}">
+      <div class="card__content">
+        <h1 class="card__header">{{ project|title }}</h1>
+        <p class="card__text">{{ desc }}</p>
+        <button class="card__btn">Explore <span>&rarr;</span></button>
+      </div>
     </div>
-    <div class="card-body">
-      <h5 class="card-title">{{ project|title }} Project</h5>
-      <p class="card-text">{{ desc }}</p>
-      <a href="{{ urls }}" class="btn btn-primary">Go To Project</a>
-    </div>
+  </div>
   {% endfor %}
 
 </div>
 <br>
-{% include "portfolios/includes/footer.html" %}
 {% endblock %}
