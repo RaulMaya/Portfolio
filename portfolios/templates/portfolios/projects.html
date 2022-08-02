@@ -13,22 +13,25 @@ RM: Projects
 
 {% block content %}
 {% include "portfolios/includes/header.html" %}
-<div class="l-container">
+<div class="container">
   
-  {% for project, image, desc, urls in projects %}
-  <div class="grid__item">
-    <div class="card"><img class="card__img" src="{{ image }}">
-      <div class="card__content">
-        <h1 class="card__header">{{ project|title }}</h1>
-        <p class="card__text">{{ desc }}</p>
-      </div>
-      <center><a href="{{ urls }}"><button class="card__btn">Explore <span>&rarr;</span></button></a></center>
-    </div>
-    
-  </div>
-  
+  {% for project in projects %}
+  <figure class="image-block">
+    <h1>{{ project.title|title }}</h1>
+    <img src="{{ project.image.url }}" alt="" />
+    <figcaption>
+      <h3>
+        More Info
+      </h3>
+      <p>{{ project.content }}</p>
+      <a href="{{ project.url_link }}"><button>
+        More Info
+      </button></a>
+    </figcaption>
+  </figure>
   {% endfor %}
-
 </div>
+
+
 <br>
 {% endblock %}
