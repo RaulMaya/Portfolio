@@ -14,11 +14,11 @@ class Tag(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length=100)
     image = models.ImageField(upload_to="images", null=True)
-    date = models.DateField(auto_now_add=True) # Automatically set whenever there is an update
+    date = models.DateField() # Automatically set whenever there is an update
     slug = models.SlugField(max_length=100, unique=True, default="", db_index=True) # Unique True implies an index
     content = models.TextField(validators=[MinLengthValidator(10)])
     url_link = models.URLField(max_length = 400)
-    tag = models.ManyToManyField(Tag, null=False, related_name="posts")
+    tag = models.ManyToManyField(Tag, null=False, related_name="projects")
 
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)

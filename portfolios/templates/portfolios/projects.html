@@ -24,6 +24,9 @@ RM: Projects
         More Info
       </h3>
       <p>{{ project.content }}</p>
+      {% for tag in project.tag.all %}
+      <span class="tag tag-{{ tag.caption }}">{{ tag.caption }}</span>
+      {% endfor %}
       <a href="{{ project.url_link }}"><button>
         More Info
       </button></a>

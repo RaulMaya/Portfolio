@@ -10,12 +10,13 @@ def index(request):
     return render(request, "portfolios/index.html")
 
 def projects(request):
-    project = Project.objects.all()
+    project = Project.objects.all().order_by('-date')
     print(project)
 
+    context = {
+        'projects':project}
 
-    return render(request, "portfolios/projects.html", {
-        'projects':project})
+    return render(request, "portfolios/projects.html", context)
 
 def resume(request):
 
