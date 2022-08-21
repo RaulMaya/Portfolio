@@ -1,53 +1,12 @@
-<nav class="my-navbar">
-    <ul>
-      <li class='list-home'>
-        <a href="{% url 'index' %}">
-            <i class="fa-solid fa-house"></i>
-          <div>
-            Home
-          </div>
-        </a>
-      </li>
-      <li class='list-project'>
-        <a href="{% url 'projects' %}">
-            <i class="fa-solid fa-briefcase"></i>
-
-          <div>
-            Projects
-          </div>
-        </a>
-      </li>
-      <li class='list-resume'>
-        <a href="{% url 'resume' %}">
-            <i class="fa-solid fa-file"></i>
-          <div>
-            Resume
-          </div>
-        </a>
-      </li>
-      <li class='list-hobby'>
-        <a href="{% url 'projects' %}">
-            <i class="fa-solid fa-lightbulb"></i>
-          <div>
-            Interests
-          </div>
-        </a>
-      </li>
-      <li class='list-interests'>
-        <a href="#">
-            <i class="fa-solid fa-award"></i>
-          <div>
-            Awards
-          </div>
-        </a>
-      </li>
-      <li class='list-summary'>
-        <a href="#">
-            <i class="fa-solid fa-user-gear"></i>
-          <div>
-            Summary
-          </div>
-        </a>
-      </li>
-    </ul>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="/"><h2>RAÚL MAYA</h2>
+      <p>Python Developer | Data Scientist</p></a>
+      <div class="d-flex">
+            <a class="nav-link" href="{% url "projects" %}"><p>Projects</p></a>
+            <a class="nav-link" href="{% url "resume" %}"><p>Resume</p></a>
+            <a class="nav-link" href="https://github.com/RaulMaya/"><p><i class="fa-brands fa-github"></i>
+            </p></a>
+      </div>
+  </div>
 </nav>

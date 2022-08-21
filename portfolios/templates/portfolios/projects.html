@@ -13,11 +13,12 @@ RM: Projects
 
 {% block content %}
 {% include "portfolios/includes/header.html" %}
+
 <div class="container">
   
   {% for project in projects %}
   <figure class="image-block">
-    <h1>{{ project.title|title }}</h1>
+    <h1>{{ project.title }}</h1>
     <img src="{{ project.image.url }}" alt="" />
     <figcaption>
       <h3>
