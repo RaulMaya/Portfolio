@@ -22,9 +22,9 @@ def resume(request):
 
     return render(request, "portfolios/resume.html")
 
-def interests(request):
+def contact(request):
 
-    return render(request, "portfolios/interests.html")
+    return render(request, "portfolios/contact.html")
 
 
 

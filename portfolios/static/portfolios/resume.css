@@ -1,19 +1,13 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans+Narrow&display=swap');
 
 
 .container{
   margin-bottom: 1rem;
   border-radius: 10px;
   box-shadow: 0 8px 8px #AAAAAA;
+  background-color: #ffffff;
 }
 
-
-.centerblock {
-  display: grid;
-  margin: auto;
-  justify-content: space-evenly;
-  grid-template-columns: auto auto auto 
-}
 
 .center {
   white-space: nowrap;
@@ -32,8 +26,8 @@ img {
 }
 
 .row{
-  border-bottom: 2px solid black;
-  padding: 1rem;
+  padding: 1.5rem;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 h4{
@@ -41,15 +35,49 @@ h4{
   
 }
 
-td {
+td, th {
   text-align: center;
 }
 
-th {
-  text-align: center;
+.col-9 p a{
+  color: black;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: x-large;
+  margin-top: 0;
+  margin-right: 0.75rem;
 }
 
-.my-cv-header{
-  background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png');
-  background-size: cover;
+
+
+.col-9 .icon-lin:hover{
+  color: #1F4690;
+}
+
+.col-9 .icon-git:hover{
+  color: #533E85;
+}
+
+
+.col-9 .icon-ig:hover{
+  color: #7D1E6A;
+}
+
+
+.col-9 .icon-tw:hover{
+  color: #3AB4F2;
+}
+
+
+.col-9 .icon-fb:hover{
+  color: #0E3EDA;
+}
+
+
+.col-9 .icon-wp:hover{
+  color: #3CCF4E;
+}
+
+
+.personal-data{
+  margin-top: 1.25rem;
 }
