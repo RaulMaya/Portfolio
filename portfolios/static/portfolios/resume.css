@@ -1,7 +1,38 @@
 .col-3{
   background-color: red;
+  border:2px solid black
 }
 
 .col-9{
   background-color: blue;
+}
+
+.about-me{
+  background-color: rgb(129, 218, 117);
+}
+
+.educ{
+  background-color: rgb(59, 59, 146);
+}
+
+.work-exp{
+  background-color: rgb(143, 59, 146);
+}
+
+.col-4{
+  background-color: rgb(175, 157, 35);
+  border:2px solid black
+}
+
+.col-6{
+  background-color: rgb(13, 192, 0);
+  border:2px solid black
+}
+
+img{
+  margin: 3px;
+}
+
+.container{
+  margin-bottom: 1rem;
 }
