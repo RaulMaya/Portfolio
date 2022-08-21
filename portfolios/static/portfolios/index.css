@@ -45,7 +45,7 @@
   -webkit-transition: color 0.25s 0.0833333333s;
   transition: color 0.25s 0.0833333333s;
   position: relative;
-  
+  border-radius: 5px;
 }
 
 .draw-border::before,
@@ -59,16 +59,19 @@
   height: 0;
   bottom: 0;
   right: 0;
+  border-radius: 5px;
 }
 
 .draw-border::before {
   border-bottom-width: 2px;
   border-left-width: 2px;
+  border-radius: 5px;
 }
 
 .draw-border::after {
   border-top-width: 2px;
   border-right-width: 2px;
+  border-radius: 5px;
 }
 
 .icon-url{
@@ -84,6 +87,7 @@
 
 .draw-border:hover {
   color: #2666CF;
+  border-radius: 5px;
 }
 
 .draw-border:hover::before,

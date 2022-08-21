@@ -14,17 +14,23 @@ RM: Resume
 {% block content %}
 {% include "portfolios/includes/header.html" %}
 <div class='container'>
-  <div class='row'>
+  <div class='row my-cv-header'>
     <div class='col-3'>
-      Foto
+      <div class='center'>
+      <span class="helper"></span><img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" width=150>
+      </div>
     </div>
     <div class='col-9'>
       <h4>Raúl Maya Salazar</h4>
       Python Developer | Data Analyst Engineer - Ford Motor Company <br>
       Location: México, CDMX<br>
       Phone: +52 833 159 7006 | Email: raulmayas20@gmail.com<br>
-      LinkedIn: <a href = 'https://www.linkedin.com/in/raul-maya/'>https://www.linkedin.com/in/raul-maya/</a><br>
-      Github: <a href = 'https://github.com/RaulMaya'> https://github.com/RaulMaya</a>
+      <a class = "icon-url" href="https://www.linkedin.com/in/raul-maya/"><span><i class="fab fa-linkedin"></i></span></a>
+      <a class = "icon-url" href="https://github.com/RaulMaya"><span><i class="fa-brands fa-github"></i></span></a>
+      <a class = "icon-url" href="https://www.instagram.com/raul.mayas/"><span><i class="fab fa-instagram"></i></span></a>
+      <a class = "icon-url"href="https://twitter.com/RaulMaya11"><span><i class="fab fa-twitter"></i></span></a>
+      <a class = "icon-url" href="https://www.facebook.com/raul.maya.507"><span><i class="fab fa-facebook-f"></i></span></a>
+      <a class = "icon-url" href="#"><span><i class="fa-brands fa-whatsapp"></i></span></a>
     </div>
   </div>
   <div class='row'>
@@ -55,22 +61,41 @@ RM: Resume
 
   <div class='row'>
     <div class='col-4'>
-      <h4>Cloud Services & Deployment</h4>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="Italian Trulli" width=70>
-      <img src="https://seeklogo.com/images/G/google-cloud-logo-ADE788217F-seeklogo.com.png" alt="Italian Trulli" width=70>
-      <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="Italian Trulli" width=70>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" colspan="3">Cloud Services & Deployment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="Italian Trulli" width=50 height=40></td>
+            <td><img src="https://seeklogo.com/images/G/google-cloud-logo-ADE788217F-seeklogo.com.png" alt="Italian Trulli" width=50 height=40></td>
+            <td> <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="Italian Trulli" width=50 height=40></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="centerblock">
+        
+        
+       
+      </div>
     </div>
     <div class='col-4'>
       <h4>Languages</h4>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Italian Trulli" width=70>
-      <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Italian Trulli" width=70>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" width=70>
+      <div class="centerblock">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Italian Trulli" width=70>
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="Italian Trulli" width=70>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" width=70>
+      </div> 
     </div>
     <div class='col-4'>
       <h4>Container & Infrastructures</h4>
-      <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" width=70>
-      <img src="https://www.freelogovectors.net/wp-content/uploads/2022/01/terra-form-logo-freelogovectors.net_.png" width=70>
-      <img src="https://miro.medium.com/max/1024/1*R801s9CtfC4-CiH5beZUfQ.png" width=70>
+      <div class="centerblock">
+        <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt='Docker' width=70>
+        <img src="https://www.freelogovectors.net/wp-content/uploads/2022/01/terra-form-logo-freelogovectors.net_.png" width=70>
+        <img src="https://miro.medium.com/max/1024/1*R801s9CtfC4-CiH5beZUfQ.png" width=70>
+      </div>
     </div>
   </div>
 
@@ -97,24 +122,116 @@ RM: Resume
       Alteryx<br>
     </div>
   </div>
+  <div class='row'>
+    <div class='col-6'>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" colspan="3">Hard Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>CSS</td>
+            <td>Javascript</td>
+
+          </tr>
+          <tr>
+            <td>Django</td>
+            <td>Python</td>
+            <td>Flask</td>
+          </tr>
+          <tr>
+            <td>Mongo DB</td>
+            <td>SQL</td>
+            <td>Dash</td>
+          </tr>
+          <tr>
+            <td>Docker</td>
+            <td>Kubernetes</td>
+            <td>MS Office</td>
+          </tr>
+          <tr>
+            <td>Heroku</td>
+            <td>GCP</td>
+            <td>AWS</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class='col-6'>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" colspan="3">Soft Skills</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fast Learning</td>
+            <td>Team Work</td>
+            <td>Work Smart</td>
+
+          </tr>
+          <tr>
+            <td>Creativity</td>
+            <td>Adaptability</td>
+            <td>Emotional Intelligence</td>
+          </tr>
+
+          <tr>
+            <td>Public Speaking</td>
+            <td>Problem Solver</td>
+            <td>Critical Thinking</td>
+          </tr>
+
+          <tr>
+            <td>Integrity</td>
+            <td>Open Minded</td>
+            <td>Respect</td>
+          </tr>
+
+          <tr>
+            <td>Discipline</td>
+            <td>Willing to Learn</td>
+            <td>Empathy</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <div class='row'>
     <div class='col-3'>
       HTML<br>
       CSS<br>
       Javascript<br>
-    </div>
-    <div class='col-3'>
-      Python<br>
-      Django<br>
-      Flask<br>
-    </div>
-    <div class='col-3'>
       SQL<br>
       Mongo DB<br>
       Google Cloud Platform<br>
     </div>
     <div class='col-3'>
+      Python<br>
+      Django<br>
+      Flask<br>
+      Postgres<br>
+      Heroku<br>
+      Tableau<br>
+    </div>
+    <div class='col-3'>
+      HTML<br>
+      CSS<br>
+      Javascript<br>
+      SQL<br>
+      Mongo DB<br>
+      Google Cloud Platform<br>
+    </div>
+    <div class='col-3'>
+      Python<br>
+      Django<br>
+      Flask<br>
       Postgres<br>
       Heroku<br>
       Tableau<br>

@@ -37,10 +37,12 @@ figure h1 {
   margin: 0;
   padding: 0;
   color: white;
-  font-size: 25px;
-  font-weight: 100;
+  font-size: 30px;
+  font-weight: 650;
   line-height: 1;
+  -webkit-text-stroke: 1.5px black;
 }
+
 figure img {
   height: 100%;
   transition: 0.25s;

@@ -1,38 +1,55 @@
-.col-3{
-  background-color: red;
-  border:2px solid black
-}
 
-.col-9{
-  background-color: blue;
-}
 
-.about-me{
-  background-color: rgb(129, 218, 117);
-}
-
-.educ{
-  background-color: rgb(59, 59, 146);
-}
-
-.work-exp{
-  background-color: rgb(143, 59, 146);
-}
-
-.col-4{
-  background-color: rgb(175, 157, 35);
-  border:2px solid black
-}
-
-.col-6{
-  background-color: rgb(13, 192, 0);
-  border:2px solid black
-}
-
-img{
-  margin: 3px;
-}
 
 .container{
   margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 8px #AAAAAA;
+}
+
+
+.centerblock {
+  display: grid;
+  margin: auto;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto 
+}
+
+.center {
+  white-space: nowrap;
+  
+  text-align: center; margin: 1em 0;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.row{
+  border-bottom: 2px solid black;
+  padding: 1rem;
+}
+
+h4{
+  margin-bottom: 1.25rem;
+  
+}
+
+td {
+  text-align: center;
+}
+
+th {
+  text-align: center;
+}
+
+.my-cv-header{
+  background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png');
+  background-size: cover;
 }
