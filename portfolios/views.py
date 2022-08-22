@@ -3,6 +3,7 @@ from django.http import HttpResponse, HttpResponseNotFound, HttpResponseRedirect
 from django.urls import reverse
 from django.template.loader import render_to_string
 from .models  import Project
+from .forms import ContactForm
 
 
 def index(request):
@@ -22,9 +23,16 @@ def resume(request):
 
     return render(request, "portfolios/resume.html")
 
-def contact(request):
 
-    return render(request, "portfolios/contact.html")
+def contact(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return render(request, 'portfolios/contact.html')
+    form = ContactForm()
+    context = {'form': form}
+    return render(request, 'portfolios/contact.html', context)
 
 
 
