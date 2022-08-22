@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load bootstrap4 %}
+
 
 {% block css_files %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,7 +16,7 @@ RM: Projects
 {% block content %}
 {% include "portfolios/includes/header.html" %}
 
-<div class="container-xxl">
+<div class="container-fluid project-cont">
   
   {% for project in projects %}
   <figure class="image-block">
