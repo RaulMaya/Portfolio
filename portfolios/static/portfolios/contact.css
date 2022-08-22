@@ -2,77 +2,77 @@
 
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #aca49c;
+  color: #353535;
   font-size: 0.875em;
 }
 
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
-  color: #bbb5af;
+  color: #353535;
 }
 
 input::-moz-placeholder, textarea::-moz-placeholder {
-  color: #aca49c;
+  color: #353535;
   font-size: 0.875em;
 }
 
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
-  color: #bbb5af;
+  color: #353535;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #aca49c;
+  color: #353535;
   font-size: 0.875em;
 }
 
 input:focus::placeholder, textarea::focus:placeholder {
-  color: #bbb5af;
+  color: #353535;
 }
 
 input::-ms-placeholder, textarea::-ms-placeholder {
-  color: #aca49c;
+  color: #353535;
   font-size: 0.875em;
 }
 
 input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
-  color: #bbb5af;
+  color: #353535;
 }
 
 /* on hover placeholder */
 
 input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
-  color: #e2dedb;
+  color: #353535;
   font-size: 0.875em;
 }
 
 input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
-  color: #cbc6c1;
+  color: #353535;
 }
 
 input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
-  color: #e2dedb;
+  color: #353535;
   font-size: 0.875em;
 }
 
 input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
-  color: #cbc6c1;
+  color: #000000;
 }
 
 input:hover::placeholder, textarea:hover::placeholder {
-  color: #e2dedb;
+  color: #000000;
   font-size: 0.875em;
 }
 
 input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-  color: #cbc6c1;
+  color: #000000;
 }
 
 input:hover::placeholder, textarea:hover::placeholder {
-  color: #e2dedb;
+  color: #000000;
   font-size: 0.875em;
 }
 
 input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
-  color: #cbc6c1;
+  color: #000000;
 }
 
 .contact-cont{
@@ -115,9 +115,9 @@ input {
   
   background: transparent;
   outline: none;
-  color: #727272;
+  color: #000000;
   
-  border: solid 1px #b3aca7;
+  border: solid 1px #353535;
   border-bottom: none;
   
   transition: all 0.3s ease-in-out;
@@ -127,8 +127,8 @@ input {
 }
 
 input:hover {
-  background: #d4d4d4;
-  color: #e2dedb;
+  background: #d3d3d3;
+  color: #000000;
 }
 
 textarea {
@@ -141,11 +141,11 @@ textarea {
   background: transparent;
   outline: none;
   
-  color: #727272;
+  color: #000000;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 0.875em;
   
-  border: solid 1px #b3aca7;
+  border: solid 1px #353535;
   
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -154,8 +154,8 @@ textarea {
 }
 
 textarea:hover {
-  background: #b6b6b6;
-  color: #e2dedb;
+  background: #d3d3d3;
+  color: #000000;
 }
 
 #submit {
@@ -165,17 +165,17 @@ textarea:hover {
   
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 0.875em;
-  color: #b3aca7;
+  color: #353535;
   
   outline:none;
   cursor: pointer;
   
-  border: solid 1px #b3aca7;
+  border: solid 1px #353535;
   border-top: none;
 }
 
 #submit:hover {
-  color: #e2dedb;
+  color: #000000;
 }
 
 
@@ -233,7 +233,7 @@ textarea:hover {
   .social-media-list {
     position: relative;
     font-size: 22px;
-    width: 100%;
+    width: 90%;
   }
   
   .social-media-list li a {
@@ -311,3 +311,10 @@ textarea:hover {
     border-color: rgba(90, 90, 90, 0.6);
   }
   
+  .center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
+  }

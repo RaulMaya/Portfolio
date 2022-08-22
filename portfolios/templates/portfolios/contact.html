@@ -14,62 +14,64 @@ RM: Contact
 
 {% block content %}
 {% include "portfolios/includes/header.html" %}
-{% div "container-fluid contact-cont" %}
+{% div "center-screen" %}
+  {% div "container-fluid contact-cont" %}
 
-{% row "align-items-md-stretch" %}
-    {% col "col-4" %}
-      <header>CONTACT FORM</header>
-      <h5>If you have a project idea in mind, please get in touch.</h5>
+  {% row "align-items-md-stretch" %}
+      {% col "col-4" %}
+        <header>CONTACT FORM</header>
+        <h5>If you have a project idea in mind, please get in touch.</h5>
 
-        <h5>This form is the best way to reach me.</h5>
-        
-          <h5>I will be happy to discuss ideas with you and how we can work together.</h5>
-        
-            <h5>If you’d like to reach out for non-production related enquires, feel free to send an email or contact me via my social media channels.</h5>
-    {% endcol %}
-    {% col "col-4" %}
-    <form action="" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <input id="submit" type="submit" value="Submit">
-    </form>
-    {% endcol %}
-    {% col "col-4" %}
-    <div class="contact-wrapper">
-        <div class="direct-contact-container">
+          <h5>This form is the best way to reach me.</h5>
+          
+            <h5>I will be happy to discuss ideas with you and how we can work together.</h5>
+          
+              <h5>If you’d like to reach out for non-production related enquires, feel free to send an email or contact me via my social media channels.</h5>
+      {% endcol %}
+      {% col "col-4" %}
+      <form action="" method="post">
+          {% csrf_token %}
+          {{ form }}
+          <input id="submit" type="submit" value="Submit">
+      </form>
+      {% endcol %}
+      {% col "col-4" %}
+      <div class="contact-wrapper">
+          <div class="direct-contact-container">
 
-            <ul class="contact-list">
-              <li class="list-item"><i class="fa-solid fa-location-dot"><span class="contact-text place">Tampico, Tamaulipas</span></i></li>
-              
-              <li class="list-item"><i class="fa-solid fa-mobile-screen-button"></i><span class="contact-text phone"><a href="tel:52-833-159-7006" title="Give me a call">(833) 159-7006</a></span></i></li>
-              
-              <li class="list-item"><i class="fa-solid fa-envelope-open-text"><span class="contact-text gmail"><a href="mailto:raulmayas20@gmail.com" title="Send me an email">raulmayas20@gmail.com</a></span></i></li>
-              
-            </ul>
-    
-            <hr>
-            <ul class="social-media-list">
-              <li class="contact-git"><a href="https://github.com/RaulMaya" target="_blank">
-                <i class="fa-brands fa-github"></i></a>
-              </li>
-              <li class="contact-wa"><a href="#" target="_blank" >
-                <i class="fa-brands fa-whatsapp"></i></a>
-              </li>
-              <li class="contact-tw"><a href="https://twitter.com/RaulMaya11" target="_blank" >
-                <i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="contact-ig"><a href="https://www.instagram.com/raul.mayas/" target="_blank" >
-                <i class="fab fa-instagram"></i></a>
-              </li>       
-            </ul>
-            <hr>
-    
-    
-        </div>
-        
-    </div>
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa-solid fa-location-dot"><span class="contact-text place">Tampico, Tamaulipas</span></i></li>
+                
+                <li class="list-item"><i class="fa-solid fa-mobile-screen-button"></i><span class="contact-text phone"><a href="tel:52-833-159-7006" title="Give me a call">(833) 159-7006</a></span></i></li>
+                
+                <li class="list-item"><i class="fa-solid fa-envelope-open-text"><span class="contact-text gmail"><a href="mailto:raulmayas20@gmail.com" title="Send me an email">raulmayas20@gmail.com</a></span></i></li>
+                
+              </ul>
       
-    {% endcol %}
-{% endrow %}
+              <hr>
+              <ul class="social-media-list">
+                <li class="contact-git"><a href="https://github.com/RaulMaya" target="_blank">
+                  <i class="fa-brands fa-github"></i></a>
+                </li>
+                <li class="contact-wa"><a href="#" target="_blank" >
+                  <i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+                <li class="contact-tw"><a href="https://twitter.com/RaulMaya11" target="_blank" >
+                  <i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="contact-ig"><a href="https://www.instagram.com/raul.mayas/" target="_blank" >
+                  <i class="fab fa-instagram"></i></a>
+                </li>       
+              </ul>
+              <hr>
+      
+      
+          </div>
+          
+      </div>
+        
+      {% endcol %}
+  {% endrow %}
+  {% enddiv %}
 {% enddiv %}
 {% endblock %}

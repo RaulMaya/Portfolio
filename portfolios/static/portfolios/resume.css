@@ -81,3 +81,11 @@ td, th {
 .personal-data{
   margin-top: 1.25rem;
 }
+
+.my-cv-header{
+  border-bottom: 2px solid black;
+}
+
+.my-image{
+  border-radius: 5px;
+}
