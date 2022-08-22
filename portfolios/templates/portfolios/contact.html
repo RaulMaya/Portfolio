@@ -14,21 +14,27 @@ RM: Contact
 
 {% block content %}
 {% include "portfolios/includes/header.html" %}
-{% div "container" %}
+{% div "container-fluid contact-cont" %}
+
 {% row "align-items-md-stretch" %}
-    {% col "col-12" %}
-        <header>CONTACT FORM</header>
+    {% col "col-4" %}
+      <header>CONTACT FORM</header>
+      <h5>If you have a project idea in mind, please get in touch.</h5>
+
+        <h5>This form is the best way to reach me.</h5>
+        
+          <h5>I will be happy to discuss ideas with you and how we can work together.</h5>
+        
+            <h5>If you’d like to reach out for non-production related enquires, feel free to send an email or contact me via my social media channels.</h5>
     {% endcol %}
-{% endrow %}
-{% row "align-items-md-stretch" %}
-    {% col "col-6" %}
+    {% col "col-4" %}
     <form action="" method="post">
         {% csrf_token %}
         {{ form }}
         <input id="submit" type="submit" value="Submit">
     </form>
     {% endcol %}
-    {% col "col-6" %}
+    {% col "col-4" %}
     <div class="contact-wrapper">
         <div class="direct-contact-container">
 
@@ -43,16 +49,16 @@ RM: Contact
     
             <hr>
             <ul class="social-media-list">
-              <li><a href="#" target="_blank" class="contact-icon">
+              <li class="contact-git"><a href="https://github.com/RaulMaya" target="_blank">
                 <i class="fa-brands fa-github"></i></a>
               </li>
-              <li><a href="#" target="_blank" class="contact-icon">
+              <li class="contact-wa"><a href="#" target="_blank" >
                 <i class="fa-brands fa-whatsapp"></i></a>
               </li>
-              <li><a href="#" target="_blank" class="contact-icon">
+              <li class="contact-tw"><a href="https://twitter.com/RaulMaya11" target="_blank" >
                 <i class="fab fa-twitter"></i></a>
               </li>
-              <li><a href="#" target="_blank" class="contact-icon">
+              <li class="contact-ig"><a href="https://www.instagram.com/raul.mayas/" target="_blank" >
                 <i class="fab fa-instagram"></i></a>
               </li>       
             </ul>

@@ -75,14 +75,25 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
   color: #cbc6c1;
 }
 
+.contact-cont{
+  top:50%;
+  width: 90%;
+}
 
 header {
   position: relative;
-  font-size: 2em;
+  font-size: 3.5em;
   margin: auto;
   text-align: center;
+  font-family: 'Anton', sans-serif;
+
+}
+h5{
+  text-align: center;
   font-family: 'PT Sans Narrow', sans-serif;
-  margin-bottom: 1.5rem;
+  font-size: larger;
+  margin: 0.5rem 2rem;
+  padding: 0.75rem 0;
 }
 
 form {
@@ -169,28 +180,28 @@ textarea:hover {
 
 
 .direct-contact-container {
-    margin-left: 3rem;
-    max-width: 380px;
+  margin-left: 4rem;
     font-family: 'PT Sans Narrow', sans-serif;
+    width:345px;
     
   }
   
   /* Location, Phone, Email Section */
   .contact-list {
     list-style-type: none;
-    margin-left: 0px;
-    padding-right: 20px;
+    text-align: left;
+
   }
   
   .list-item {
-    line-height: 4;
+    line-height: 3.5;
     color: rgb(0, 0, 0);
+    font-size: large;
   }
   
   .contact-text {
-    font: 300 18px 'PT Sans Narrow', sans-serif;
-
-    letter-spacing: 1.9px;
+    font:18px 'PT Sans Narrow', sans-serif;
+    letter-spacing: 1.5px;
     color: rgb(0, 0, 0);
   }
   
@@ -222,10 +233,7 @@ textarea:hover {
   .social-media-list {
     position: relative;
     font-size: 22px;
-    text-align: center;
     width: 100%;
-    margin-left: -2rem;
-    padding: 0;
   }
   
   .social-media-list li a {
@@ -237,13 +245,14 @@ textarea:hover {
     display: inline-block;
     height: 60px;
     width: 60px;
-    margin: 10px 3px;
     line-height: 60px;
     border-radius: 50%;
+    margin: 10px 2px;
     color: #fff;
     background-color: rgb(27,27,27);
     cursor: pointer; 
     transition: all .2s ease-in-out;
+    text-align: center;
   }
   
   .social-media-list li:after {
@@ -256,12 +265,38 @@ textarea:hover {
     line-height: 60px;
     border-radius: 50%;
     opacity: 0;
-    box-shadow: 0 0 0 1px rgb(187, 62, 62);
+    box-shadow: 0 0 0 1px rgb(0, 0, 0);
     transition: all .2s ease-in-out;
   }
   
-  .social-media-list li:hover {
-    background-color: #fff; 
+  .social-media-list .contact-git:hover{
+    background-color: #533E85;
+    color: white;
+  }
+  .social-media-list .contact-tw:hover{
+    background-color: #3AB4F2;
+    color: white;
+  }
+  .social-media-list .contact-ig:hover{
+    background-color: #7D1E6A;
+    color: white;
+  }
+  .social-media-list .contact-wa:hover{
+    background-color: #3CCF4E;
+    color: white;
+  }
+
+  .social-media-list .contact-git:after {
+    box-shadow: 0 0 0 1px #533E85;
+  }
+  .social-media-list .contact-ig:after {
+    box-shadow: 0 0 0 1px #7D1E6A;
+  }
+  .social-media-list .contact-wa:after {
+    box-shadow: 0 0 0 1px #3CCF4E;
+  }
+  .social-media-list .contact-tw:after {
+    box-shadow: 0 0 0 1px #3AB4F2;
   }
   
   .social-media-list li:hover:after {
@@ -270,9 +305,6 @@ textarea:hover {
     transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
   }
   
-  .social-media-list li:hover a {
-    color: #000;
-  }
   
   
   hr {
