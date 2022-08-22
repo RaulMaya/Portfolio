@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load extras %}
 
 {% block css_files %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -13,9 +14,56 @@ RM: Contact
 
 {% block content %}
 {% include "portfolios/includes/header.html" %}
-<form action="" method="post">
-    {% csrf_token %}
-    {{ form }}
-    <input id="submit" type="submit" value="Submit">
- </form>
+{% div "container" %}
+{% row "align-items-md-stretch" %}
+    {% col "col-12" %}
+        <header>CONTACT FORM</header>
+    {% endcol %}
+{% endrow %}
+{% row "align-items-md-stretch" %}
+    {% col "col-6" %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input id="submit" type="submit" value="Submit">
+    </form>
+    {% endcol %}
+    {% col "col-6" %}
+    <div class="contact-wrapper">
+        <div class="direct-contact-container">
+
+            <ul class="contact-list">
+              <li class="list-item"><i class="fa-solid fa-location-dot"><span class="contact-text place">Tampico, Tamaulipas</span></i></li>
+              
+              <li class="list-item"><i class="fa-solid fa-mobile-screen-button"></i><span class="contact-text phone"><a href="tel:52-833-159-7006" title="Give me a call">(833) 159-7006</a></span></i></li>
+              
+              <li class="list-item"><i class="fa-solid fa-envelope-open-text"><span class="contact-text gmail"><a href="mailto:raulmayas20@gmail.com" title="Send me an email">raulmayas20@gmail.com</a></span></i></li>
+              
+            </ul>
+    
+            <hr>
+            <ul class="social-media-list">
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa-brands fa-github"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fab fa-twitter"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fab fa-instagram"></i></a>
+              </li>       
+            </ul>
+            <hr>
+    
+    
+        </div>
+        
+    </div>
+      
+    {% endcol %}
+{% endrow %}
+{% enddiv %}
 {% endblock %}

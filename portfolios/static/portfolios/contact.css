@@ -82,6 +82,7 @@ header {
   margin: auto;
   text-align: center;
   font-family: 'PT Sans Narrow', sans-serif;
+  margin-bottom: 1.5rem;
 }
 
 form {
@@ -165,3 +166,116 @@ textarea:hover {
 #submit:hover {
   color: #e2dedb;
 }
+
+
+.direct-contact-container {
+    margin-left: 3rem;
+    max-width: 380px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: rgb(0, 0, 0);
+  }
+  
+  .contact-text {
+    font: 300 18px 'PT Sans Narrow', sans-serif;
+
+    letter-spacing: 1.9px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin-left: -2rem;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px rgb(187, 62, 62);
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color: #000;
+  }
+  
+  
+  hr {
+    border-color: rgba(90, 90, 90, 0.6);
+  }
+  
