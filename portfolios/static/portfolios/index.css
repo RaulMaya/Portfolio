@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
 
+body{
+  background-image: url('https://www.nasa.gov/sites/default/files/thumbnails/image/main_image_star-forming_region_carina_nircam_final-5mb.jpg') !important ;
+  background-size: cover  !important ;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
     display: grid;
     grid-auto-flow: column;

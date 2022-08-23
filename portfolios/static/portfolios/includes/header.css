@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans+Narrow&display=swap');
 
-.navbar{
+
+.navbar .navbar-light {
   color: black;
   background-color: transparent;
   padding-bottom: 5px;
   margin-bottom: 1rem;
 }
+
+
 
 .navbar-brand {
   text-decoration: none;
@@ -28,9 +31,44 @@
   margin-top: 0;
 }
 
-.d-flex a p{
+.navbar-collapse  a p{
   color: black;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: x-large;
   margin-top: 0;
+}
+
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(53, 53, 53)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(0, 0, 0);
+} 
+
+
+@media(max-width: 750px) {
+  .navbar-brand h2{
+    text-decoration: none;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 0;
+  }
+  
+  .navbar-brand p{
+    color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: x-small;
+    margin-top: 0;
+  }
+
+  .navbar-collapse  a p{
+    color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: medium;
+  }
+  
 }

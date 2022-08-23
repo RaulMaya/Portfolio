@@ -1,17 +1,26 @@
-<nav class="navbar navbar-expand-lg ">
-  <div class="container-fluid">
-      <a class="navbar-brand" href="/"><h2>RAÚL MAYA</h2>
-      <p>Python Developer | Data Scientist</p></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="d-flex">
-            <a class="nav-link" href="{% url "projects" %}"><p>Projects</p></a>
-            <a class="nav-link" href="{% url "resume" %}"><p>Resume</p></a>
-            <a class="nav-link" href="{% url "contact" %}"><p>Contact</p></a>
-            <a class="nav-link" href="https://github.com/RaulMaya/"><p><i class="fa-brands fa-github"></i></p></a>
-            <a class="nav-link" href="https://www.linkedin.com/in/raul-maya/"><p><i class="fab fa-linkedin"></i></p></a>
-      </div>
+<nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
+  <a href="/" class="navbar-brand mr-auto"><h2>RAÚL MAYA</h2>
+    <p>Python Developer | Data Scientist</p></a>
+  <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+      <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url "projects" %}"><p>Projects</p></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url "resume" %}"><p>Resume</p></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="{% url "contact" %}"><p>Contact</p></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="https://github.com/RaulMaya/"><p><i class="fa-brands fa-github"></i></p></a>
+        </li>
+        <li class="nav-item ">  
+          <a class="nav-link" href="https://www.linkedin.com/in/raul-maya/"><p><i class="fab fa-linkedin"></i></p></a>
+        </li>
+      </ul>
   </div>
 </nav>
-
