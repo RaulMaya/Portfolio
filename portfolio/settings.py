@@ -42,7 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
+    'cloudinary'
 ]
+
+CLOUDINARY_STORAGE = {
+             'CLOUD_NAME': 'your_cloud_name',
+             'API_KEY': 'your_api_key',
+             'API_SECRET': 'your_api_secret'
+            }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -131,6 +139,8 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = BASE_DIR / "uploads"
 MEDIA_URL = "/media/"
 
+DEFAULT_FILE_STORAGE='cloudinary_storage.storage.MediaCloudinaryStorage'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -142,3 +152,4 @@ if os.environ.get('DEBUG') =='TRUE':
     DEBUG = True
 elif os.environ.get('DEBUG') =='FALSE':
     DEBUG = False
+
