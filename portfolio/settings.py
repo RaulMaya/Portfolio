@@ -47,10 +47,11 @@ INSTALLED_APPS = [
 ]
 
 CLOUDINARY_STORAGE = {
-             'CLOUD_NAME': 'your_cloud_name',
-             'API_KEY': 'your_api_key',
-             'API_SECRET': 'your_api_secret'
+             'CLOUD_NAME': os.getenv('CLOUD_NAME', 'Optional default value'),
+             'API_KEY': os.getenv('API_KEY', 'Optional default value'),
+             'API_SECRET': os.getenv('API_SECRET', 'Optional default value')
             }
+            
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
