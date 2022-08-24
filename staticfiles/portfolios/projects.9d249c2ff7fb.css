@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans+Narrow&display=swap');
+
+.project-cont{
+  background-color: transparent;
+  font-family: 'PT Sans Narrow', sans-serif;
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto;
+}
+
+
+figure {
+  margin-top: 12px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 450px;
+  border-radius: 10px;
+  background-size: cover;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: hidden;
+}
+figure:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+figure:hover img {
+  transform: scale(1.25);
+}
+figure:hover figcaption {
+  top: 30%;
+  bottom:0px
+}
+figure h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1;
+  -webkit-text-stroke: .5px black;
+}
+
+figure img {
+  height: 100%;
+  transition: 0.25s;
+}
+figure figcaption {
+  position: absolute;
+  top: 87.5%;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: white;
+  line-height: 1;
+  transition: 0.25s;
+}
+figure figcaption h3 {
+  margin: 0 0 20px;
+  padding: 0;
+}
+figure figcaption p {
+  font-size: 14px;
+  line-height: 1.75;
+}
+figure figcaption button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0 0;
+  padding: 10px 30px;
+  background-color: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.tag {
+  background: #cccccc;
+  border-radius: 50px;
+  font-size: 12px;
+  margin: 10px 0 10px 0;
+  color: #fff;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tag-Python {
+  background-color: #3dbcd5;
+}
+
+.tag-Javascript {
+  background-color: #F6D167;
+}
+
+.tag-AWS {
+  background-color: #1363DF;
+}
+
+.tag-Django {
+  background-color: #1A4D2E;
+}
+
+.tag-API {
+  background-color: #8B2F97;
+}
+
+.tag-Leaflet {
+  background-color: #A47E3B;
+}
+
+.tag-ML {
+  background-color: #560D0D;
+}
+
+.tag-Scikit-Learn {
+  background-color: #F58B54;
+}
+
+.tag-Flask {
+  background-color: #99A8B2;
+}
+
+.tag-PyGame {
+  background-color: #76A21E;
+}
+
+.tag-MongoDB {
+  background-color: #5BB318;
+}
+
+.tag-Plotly {
+  background-color: #31087B;
+}
+
+.tag-Requests {
+  background-color: #411530;
+}
+
+.tag-D3 {
+  background-color: #395B64;
+}
+
+.tag-ETL {
+  background-color: #FFF80A;
+}
+
+.tag-HTML {
+  background-color: #EF5B0C;
+}
+
+.tag-CSS {
+  background-color: #003865;
+}
+
+@media(min-width: 2000px) {
+
+  .project-cont{
+    grid-template-columns: auto auto auto auto auto auto;
+  }}
+
+
+@media(max-width: 1300px) {
+
+  .project-cont{
+    grid-template-columns: auto auto auto;
+  }}
+
+@media(max-width: 1000px) {
+
+  .project-cont{
+    grid-template-columns: auto auto auto;
+  }
+
+  figure {
+    width: 250px;
+    height: 350px;
+  }
+
+  figure h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    -webkit-text-stroke: .35px black;
+  }
+
+  figure figcaption {
+    top: 83.5%;
+    color: white;
+    line-height: 1;
+    transition: 0.25s;
+  }
+
+  figure figcaption h3 {
+    font-size: 22px;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+  figure figcaption p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  figure:hover figcaption {
+    top: 5%;
+    bottom:0px
+  }
+}
+
+@media(max-width: 850px) {
+
+  .project-cont{
+    grid-template-columns: auto auto;
+  }
+}
+
+
+@media(max-width: 600px) {
+
+  .project-cont{
+    grid-template-columns: auto auto;
+  }
+  figure {
+    width: 200px;
+    height: 320px;
+  }
+
+  figure h1 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1;
+    -webkit-text-stroke: .15px black;
+  }
+
+  figure figcaption {
+    top: 83.5%;
+    color: white;
+    line-height: 1;
+    transition: 0.25s;
+  }
+
+  figure figcaption h3 {
+    font-size: 18px;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+  figure figcaption p {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .tag {
+    border-radius: 50px;
+    font-size: 10px;
+    margin: 8px 0 8px 0;
+    color: #fff;
+    padding: 2px 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  figure figcaption button {
+
+    margin: 15px 0 0;
+    padding: 10px 20px;
+    background-color: #1abc9c;
+
+    font-size: 12px;
+
+  }
+}
+

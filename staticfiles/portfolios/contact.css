@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Sans+Narrow&display=swap');
+
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #353535;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #353535;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #353535;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #353535;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #353535;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #353535;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #353535;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #353535;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #353535;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #353535;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #353535;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #000000;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #000000;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #000000;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #000000;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #000000;
+}
+
+.contact-cont{
+  top:20%;
+  width: 95%;
+}
+
+
+header {
+  position: relative;
+  font-size: 3.5em;
+  margin: auto;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+
+}
+h5{
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: larger;
+  margin: 0.5rem 1rem;
+  padding: 0.25rem 0;
+}
+
+form {
+  position: relative;
+  width: 400px;
+  margin: auto;
+}
+
+label{
+    display: none;
+}
+
+input {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 0.875em;
+  width: 400px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  margin-bottom: 1px;
+  
+  background: transparent;
+  outline: none;
+  color: #000000;
+  
+  border: solid 1px #353535;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #d3d3d3;
+  color: #000000;
+}
+
+textarea {
+  width: 400px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #000000;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #353535;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #d3d3d3;
+  color: #000000;
+}
+
+#submit {
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 0.875em;
+  color: #353535;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #353535;
+}
+
+#submit:hover {
+  color: #000000;
+  border: solid 1px #353535;
+}
+
+
+.direct-contact-container {
+  font-family: 'PT Sans Narrow', sans-serif;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    text-align: left;
+
+  }
+  
+  .list-item {
+    line-height: 3.5;
+    color: rgb(0, 0, 0);
+    font-size: large;
+  }
+  
+  .contact-text {
+    font:18px 'PT Sans Narrow', sans-serif;
+    letter-spacing: 1.5px;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+  }
+  
+
+  
+  .contact-text a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    width: 90%;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 10px 2px;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+    text-align: center;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0);
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list .contact-git:hover{
+    background-color: #533E85;
+    color: white;
+  }
+  .social-media-list .contact-tw:hover{
+    background-color: #3AB4F2;
+    color: white;
+  }
+  .social-media-list .contact-ig:hover{
+    background-color: #7D1E6A;
+    color: white;
+  }
+  .social-media-list .contact-wa:hover{
+    background-color: #3CCF4E;
+    color: white;
+  }
+
+  .social-media-list .contact-git:after {
+    box-shadow: 0 0 0 1px #533E85;
+  }
+  .social-media-list .contact-ig:after {
+    box-shadow: 0 0 0 1px #7D1E6A;
+  }
+  .social-media-list .contact-wa:after {
+    box-shadow: 0 0 0 1px #3CCF4E;
+  }
+  .social-media-list .contact-tw:after {
+    box-shadow: 0 0 0 1px #3AB4F2;
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  
+  
+  hr {
+    border-color: rgba(90, 90, 90, 0.6);
+  }
+  
+  .center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 55vh;
+  }
