@@ -18,7 +18,7 @@ RM: Contact
   {% div "container-fluid contact-cont" %}
 
   {% row "align-items-md-stretch" %}
-      {% col "col-md-4" %}
+      {% col "col-xxl-4" %}
         <header>CONTACT FORM</header>
         <h5>If you have a project idea in mind, please get in touch.</h5>
 
@@ -28,47 +28,42 @@ RM: Contact
           
               <h5>If you’d like to reach out for non-production related enquires, feel free to send an email or contact me via my social media channels.</h5>
       {% endcol %}
-      {% col "col-md-4" %}
+      {% col "col-xxl-4" %}
       <form action="" method="post">
           {% csrf_token %}
           {{ form }}
           <input id="submit" type="submit" value="Submit">
       </form>
       {% endcol %}
-      {% col "col-md-4" %}
-      <div class="contact-wrapper">
-          <div class="direct-contact-container">
-
-              <ul class="contact-list">
-                <li class="list-item"><i class="fa-solid fa-location-dot"><span class="contact-text place">Tampico, Tamaulipas</span></i></li>
-                
-                <li class="list-item"><i class="fa-solid fa-mobile-screen-button"></i><span class="contact-text phone"><a href="tel:52-833-159-7006" title="Give me a call">(833) 159-7006</a></span></i></li>
-                
-                <li class="list-item"><i class="fa-solid fa-envelope-open-text"><span class="contact-text gmail"><a href="mailto:raulmayas20@gmail.com" title="Send me an email">raulmayas20@gmail.com</a></span></i></li>
-                
-              </ul>
-      
-              <hr>
-              <ul class="social-media-list">
-                <a href="https://github.com/RaulMaya" target="_blank"><li class="contact-git">
-                  <i class="fa-brands fa-github"></i>
-                </li></a>
-                <a href="https://wa.me/528331597006?text=I'm%20interested%20in%20your%20car%20for%20sale" target="_blank" ><li class="contact-wa">
-                  <i class="fa-brands fa-whatsapp"></i>
-                </li></a>
-                <a href="https://twitter.com/RaulMaya11" target="_blank" ><li class="contact-tw">
-                  <i class="fab fa-twitter"></i>
-                </li></a>
-                <a href="https://www.instagram.com/raul.mayas/" target="_blank" ><li class="contact-ig">
-                  <i class="fab fa-instagram"></i>
-                </li></a>       
-              </ul>
-              <hr>
-      
-      
-          </div>
+      {% col "col-xl-4 direct-contact-container" %}
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa-solid fa-location-dot"><span class="contact-text place">Tampico, Tamaulipas</span></i></li>
+            
+            <li class="list-item"><i class="fa-solid fa-mobile-screen-button"></i><span class="contact-text phone"><a href="tel:52-833-159-7006" title="Give me a call">(833) 159-7006</a></span></i></li>
+            
+            <li class="list-item"><i class="fa-solid fa-envelope-open-text"><span class="contact-text gmail"><a href="mailto:raulmayas20@gmail.com" title="Send me an email">raulmayas20@gmail.com</a></span></i></li>
+            
+          </ul>
+  
+          <hr>
+          <ul class="social-media-list">
+            <a href="https://github.com/RaulMaya" target="_blank"><li class="contact-git">
+              <i class="fa-brands fa-github"></i>
+            </li></a>
+            <a href="https://wa.me/528331597006?text=I'm%20interested%20in%20your%20car%20for%20sale" target="_blank" ><li class="contact-wa">
+              <i class="fa-brands fa-whatsapp"></i>
+            </li></a>
+            <a href="https://twitter.com/RaulMaya11" target="_blank" ><li class="contact-tw">
+              <i class="fab fa-twitter"></i>
+            </li></a>
+            <a href="https://www.instagram.com/raul.mayas/" target="_blank" ><li class="contact-ig">
+              <i class="fab fa-instagram"></i>
+            </li></a>       
+          </ul>
+          <hr>
+    
           
-      </div>
+    
         
       {% endcol %}
   {% endrow %}

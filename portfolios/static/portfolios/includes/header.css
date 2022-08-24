@@ -48,7 +48,7 @@
 } 
 
 
-@media(max-width: 750px) {
+@media(max-width: 765px) {
   .navbar-brand h2{
     text-decoration: none;
     color: black;

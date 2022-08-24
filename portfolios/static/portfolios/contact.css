@@ -77,7 +77,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 
 .contact-cont{
   top:50%;
-  width: 90%;
+  width: 95%;
 }
 
 header {
@@ -92,13 +92,13 @@ h5{
   text-align: center;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: larger;
-  margin: 0.5rem 2rem;
-  padding: 0.75rem 0;
+  margin: 0.5rem 1rem;
+  padding: 0.25rem 0;
 }
 
 form {
   position: relative;
-  width: 500px;
+  width: 400px;
   margin: auto;
 }
 
@@ -109,16 +109,16 @@ label{
 input {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 0.875em;
-  width: 470px;
+  width: 400px;
   height: 50px;
   padding: 0px 15px 0px 15px;
+  margin-bottom: 1px;
   
   background: transparent;
   outline: none;
   color: #000000;
   
   border: solid 1px #353535;
-  border-bottom: none;
   
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -132,8 +132,7 @@ input:hover {
 }
 
 textarea {
-  width: 470px;
-  max-width: 470px;
+  width: 400px;
   height: 110px;
   max-height: 110px;
   padding: 15px;
@@ -171,19 +170,16 @@ textarea:hover {
   cursor: pointer;
   
   border: solid 1px #353535;
-  border-top: none;
 }
 
 #submit:hover {
   color: #000000;
+  border: solid 1px #353535;
 }
 
 
 .direct-contact-container {
-  margin-left: 4rem;
-    font-family: 'PT Sans Narrow', sans-serif;
-    width:345px;
-    
+  font-family: 'PT Sans Narrow', sans-serif;
   }
   
   /* Location, Phone, Email Section */
