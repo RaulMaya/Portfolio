@@ -165,6 +165,12 @@ figure figcaption button {
   background-color: #003865;
 }
 
+@media(min-width: 2000px) {
+
+  .project-cont{
+    grid-template-columns: auto auto auto auto auto auto;
+  }}
+
 
 @media(max-width: 1300px) {
 
