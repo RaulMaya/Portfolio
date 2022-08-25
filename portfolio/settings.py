@@ -46,12 +46,7 @@ INSTALLED_APPS = [
     'cloudinary'
 ]
 
-CLOUDINARY_STORAGE = {
-             'CLOUD_NAME': os.getenv('CLOUD_NAME', 'Optional default value'),
-             'API_KEY': os.getenv('API_KEY', 'Optional default value'),
-             'API_SECRET': os.getenv('API_SECRET', 'Optional default value')
-            }
-            
+CLOUDINARY_URL = os.getenv('CLOUDINARY_URL', 'Optional default value')
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
