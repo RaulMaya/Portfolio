@@ -159,9 +159,8 @@ textarea:hover {
 }
 
 #submit {
-  
   padding: 0;
-  margin: -5px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 0.875em;
